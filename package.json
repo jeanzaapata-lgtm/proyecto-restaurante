@@ -1,4 +1,10 @@
 {
+  
+  "homepage": "https://tu-usuario.github.io/nombre-de-tu-repositorio",
+  "name": "mi-app-react",
+  "version": "0.1.0",
+  "private": true,
+
   "name": "proyecto-restaurante",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +14,7 @@
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
     "react": "^19.3.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.3.1",
@@ -16,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
